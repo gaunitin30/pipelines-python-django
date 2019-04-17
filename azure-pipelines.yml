@@ -25,6 +25,7 @@ steps:
           raise SystemExit('Could not find a Django project')
       project_location = path.dirname(path.abspath(manage_py))
       print('Found Django project in', project_location)
+      print('HI NITIN')
       print('##vso[task.setvariable variable=projectRoot]{}'.format(project_location))
 
 - script: |
